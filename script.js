@@ -51,3 +51,34 @@ function getComputerChoice() {
         return 'scissors'
     }
 }
+
+//Function that runs the game 5 times
+function autoGame(num) {
+    let playerScore = 0;
+    let computerScore = 0;
+
+    for (let i = 0; i < num; i++) {
+        let game = playGame();
+
+        if (game == 'You win') {
+            playerScore++;
+            alert(`You win; Human: ${playerScore}, Computer: ${computerScore}`);
+        } else if (game == 'You lose') {
+            computerScore++;
+            alert(`You lose; Human: ${playerScore}, Computer: ${computerScore}`);
+        } else {
+            alert(`It's a tie; Human: ${playerScore}, Computer: ${computerScore}`);
+        }
+
+        console.log(game);
+        
+    }
+
+    if (playerScore > computerScore) {
+        alert("Final Result: Win")
+    } else if (playerScore < computerScore) {
+        alert("Final Result: Lost")
+    } else {
+        alert("Final Result: Tie")
+    }
+};

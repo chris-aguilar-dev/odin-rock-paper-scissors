@@ -52,7 +52,7 @@ function getComputerChoice() {
     }
 }
 
-//Function that runs the game 5 times
+//Function that runs the game any number of times
 function autoGame(num) {
     let playerScore = 0;
     let computerScore = 0;

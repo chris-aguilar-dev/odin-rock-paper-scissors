@@ -76,9 +76,12 @@ function autoGame(num) {
 
     if (playerScore > computerScore) {
         alert("Final Result: Win")
+        console.log("Final Result: Win")
     } else if (playerScore < computerScore) {
         alert("Final Result: Lost")
+        console.log("Final Result: Lost")
     } else {
         alert("Final Result: Tie")
+        console.log("Final Result: Tie")
     }
 };
